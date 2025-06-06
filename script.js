@@ -74,22 +74,22 @@ const updateFilter = () => {
     } else {
         grayscale = filterSlider.value;
     }
-    applyFilter(); // Aplica os filtros à imagem de visualização
+    applyFilter(); 
 }
 
 // Adiciona eventos aos botões de rotação para modificar a rotação e espelhamento da imagem
 rotateOptions.forEach(option => {
     option.addEventListener("click", () => {
         if (option.id === "left") {
-            rotate -= 90; // Rotação de 90 graus para a esquerda
+            rotate -= 90; 
         } else if (option.id === "right") {
-            rotate += 90; // Rotação de 90 graus para a direita
+            rotate += 90; 
         } else if (option.id === "horizontal") {
-            flipHorizontal = flipHorizontal === 1 ? -1 : 1; // Espelhamento horizontal
+            flipHorizontal = flipHorizontal === 1 ? -1 : 1; 
         } else {
-            flipVertical = flipVertical === 1 ? -1 : 1; // Espelhamento vertical
+            flipVertical = flipVertical === 1 ? -1 : 1;
         }
-        applyFilter(); // Aplica os filtros à imagem de visualização
+        applyFilter(); 
     });
 });
 
@@ -97,8 +97,8 @@ rotateOptions.forEach(option => {
 const resetFilter = () => {
     brightness = "100"; saturation = "100"; inversion = "0"; grayscale = "0";
     rotate = 0; flipHorizontal = 1; flipVertical = 1;
-    filterOptions[0].click(); // Seleciona a primeira opção de filtro por padrão
-    applyFilter(); // Aplica os filtros à imagem de visualização
+    filterOptions[0].click(); 
+    applyFilter(); 
 }
 
 // Função para salvar a imagem editada pelo usuário
