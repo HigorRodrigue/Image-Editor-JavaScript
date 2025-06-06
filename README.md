@@ -22,15 +22,16 @@ A interface do usuário inclui:
 - Sliders e botões para manipular os filtros e transformações
 - Visualização da imagem editada
 - Botões para resetar e salvar a imagem
-
 ## 📂 Estrutura de Arquivos
+
+plaintext
 Image-Editor-JavaScript-main/
-├── index.html # Estrutura básica da aplicação
-├── style.css # Estilos e layout da interface
-├── script.js # Lógica principal do editor
-├── image-placeholder.svg # Imagem de placeholder
-├── .gitignore
-└── .gitattributes
+├── index.html             # Estrutura básica da aplicação
+├── style.css              # Estilos e layout da interface
+├── script.js              # Lógica principal do editor
+├── image-placeholder.svg  # Imagem de placeholder
+├── .gitignore             # Arquivos ignorados pelo Git
+└── .gitattributes         # Atributos de configuração do Git
 
 ## 🚀 Como Usar
 
