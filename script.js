@@ -17,11 +17,11 @@ let rotate = 0, flipHorizontal = 1, flipVertical = 1;
 // Função para carregar a imagem selecionada pelo usuário
 const loadImage = () => {
     let file = fileInput.files[0];
-    if (!file) return; // Retorna se nenhum arquivo foi selecionado
+    if (!file) return; 
     previewImg.src = URL.createObjectURL(file); // Exibe a imagem no elemento de visualização
     previewImg.addEventListener("load", () => {
-        resetFilterBtn.click(); // Reseta os filtros quando a imagem é carregada
-        document.querySelector(".container").classList.remove("disable"); // Habilita a área de edição
+        resetFilterBtn.click();
+        document.querySelector(".container").classList.remove("disable");
     });
 }
 
@@ -38,7 +38,7 @@ filterOptions.forEach(option => {
         option.classList.add("active");
         filterName.innerText = option.innerText;
 
-        // Configura os valores iniciais do slider com base na opção selecionada
+        
         if (option.id === "brightness") {
             filterSlider.max = "200";
             filterSlider.value = brightness;
